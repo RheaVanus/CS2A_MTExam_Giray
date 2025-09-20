@@ -225,7 +225,6 @@ header{/* Styles for the header container */
 .descitm{
     text-align: justify;
 }
-/* Styles for an individual product item card */
 .item{
     display: flex; 
     flex-direction: column; /* Stacks the item's content vertically */
@@ -240,9 +239,9 @@ header{/* Styles for the header container */
      width: 100%; /* Makes the image responsive */
      height: 300px; /* Sets a fixed height */
      object-fit: cover; /* Prevents the image from being distorted */
-     cursor: pointer; /* Changes cursor to pointer */
+     cursor: pointer; 
      transform: 0.2s ease; /* Smooth transition for transformations (like hover) */
-     border-radius: 20px; /* Rounds the image corners */
+     border-radius: 20px; 
 
 }
 .item img:hover{
@@ -280,7 +279,6 @@ header{/* Styles for the header container */
 .buttongrp button:hover{
     transform: scale(1.08);
 }
-/* Specific style for the "Remove" button */
 .remove{
     background-color: red;
 }
