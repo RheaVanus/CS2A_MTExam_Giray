@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Site</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/b25cc54810.js" crossorigin="anonymous"></script></head>
+<body>
+ <header>
+        <nav class="navs">
+            <h1 class="heads">Ilocandia</h1>
+            <ul class="nav-icon">
+                <li class="navcent"><a href="index.html"> Home</i></a></li>
+                <li class="navcent"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="heroimg">
+        <div class="herotxt">
+            <h1>WELCOME TO ILOCOS SUR</h1>
+              <p>Be mesmerized by the beauty of the province's rich in history, products, and tourist spots</p> 
+         </div>
+    </div>
+
+    <section>
+<section class="features">
+    <div class="head-text">
+        <h1>Feature Tourist Spots in Ilocos Sur</h1>
+    </div>
+    <div class="vids">
+        <div class="feat-vid">
+            <video controls mute src="assets/css/img/Calle Crisologo, Vigan City.mp4"></video>
+            <h4>Calle Crisologo</h4>
+            <a href="#calle"><button>Learn More <i class="fa-solid fa-arrow-right"></i></button></a>
+        </div>
+        <div class="feat-vid">
+            <video controls mute src="assets/css/img/Bantay Bell Tower After the Earthquake  Bantay, Ilocos Sur  4K Aerial  7-28-2022.mp4"></video>
+            <h4>Bantay Bell Tower</h4>
+            <a href="#bantay"><button>Learn More <i class="fa-solid fa-arrow-right"></i></button></a>
+        </div>
+        <div class="feat-vid">
+            <video controls mute src="assets/css/img/PINSAL FALLS, Sta. Maria, Ilocos Sur.mp4"></video>
+            <h4>Pinsal Falls</h4>
+            <a href="#pinsal"><button>Learn More <i class="fa-solid fa-arrow-right"></i></button></a>
+        </div>
+    </div>
+    <div class="feature1">
+        <img src="assets/css/img/2.jpg" alt="Calle Crisologo" class="calle">
+        <div class="feature-info">
+            <h3 id="calle">Calle Crisologo</h3>
+            <h5><i class="fa-solid fa-location-dot"></i> Vigan City, Ilocos Sur</h5>
+            <p>
+                Calle Crisologo in Vigan is a historic cobblestone street lined with preserved Spanish-era houses.  
+                It gives visitors a glimpse of the Philippines’ colonial past.  
+                At night, the street glows beautifully with lanterns, offering a romantic atmosphere.  
+            </p>
+            <p class="hashtags">#CalleCrisologo #ViganHeritage #IlocosSur #TravelBackInTime #HistoricVigan</p>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="feature1">
+        <img src="assets/css/img/4.jpg" alt="Bantay Bell Tower" class="bantay">
+        <div class="feature-info">
+            <h3 id="bantay">Bantay Bell Tower</h3>
+            <h5><i class="fa-solid fa-location-dot"></i> Bantay, Ilocos Sur</h5>
+            <p>
+                Bantay Bell Tower is a centuries-old watchtower that once served as a lookout for pirates.  
+                Today, it offers panoramic views of Vigan and the surrounding countryside.  
+                It is a symbol of strength and resilience that attracts many tourists.  
+            </p>
+            <p class="hashtags">#BantayBellTower #ViganView #IlocosHistory #TravelIlocos #HeritageSpot</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="features">
+    <div class="feature1">
+        <img src="assets/css/img/3.jpg" alt="Pinsal Falls" class="pinsal">
+        <div class="feature-info">
+            <h3 id="pinsal">Pinsal Falls</h3>
+            <h5><i class="fa-solid fa-location-dot"></i> Pinsal, Ilocos Sur</h5>
+            <p>
+                Pinsal Falls, the largest waterfall in Ilocos Sur, 
+                cascades majestically into a wide natural basin perfect for swimming. 
+                Surrounded by lush greenery and limestone formations, it offers both adventure and relaxation. 
+                Local legends and scenic views make it a must-visit for nature lovers and history buffs alike.
+            </p>
+            <p class="hashtags">#PinsalFalls #IlocosSurAdventures #NatureEscape #HiddenGemPH #TravelIlocos</p>
+        </div>
+    </div>
+</section>
+
+<section class="products">
+    <div class="item">
+        <img src="assets/css/img/bagnet.png" alt="">
+        <h4>Bagnet</h4>
+        <p class="descitm">Bagnet is a crispy deep-fried pork belly delicacy, loved for its crunchy skin and tender meat</p>
+        <p class="price">Price: ₱250</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+
+    </div>
+    <div class="item">
+        <img src="assets/css/img/balatinaw-rice.jpg" alt="">
+        <h4>Balatinaw Rice</h4>
+        <p class="descitm">Balatinaw Rice from Burgos, Ilocos Sur is a purple rice variety known for its nutty flavor and high nutritional valuet</p>
+        <p class="price">Price: ₱120 per kilo</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="assets/css/img/basi.jpg" alt="">
+        <h4>Basi</h4>
+        <p class="descitm">Basi is a traditional Ilocos sugarcane wine with a smooth, mildly sweet taste</p>
+        <p class="price">Price: ₱150</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="assets/css/img/buri.jpg" alt="">
+        <h4>Buri</h4>
+        <p class="descitm">Buri weaving is a traditional craft using buri palm leaves to create mats, hats, and basketst</p>
+        <p class="price">Price: ₱300</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="assets/css/img/empanada.jpg" alt="">
+        <h4>Empanada</h4>
+        <p class="descitm">Empanada is a crispy Ilocos delicacy filled with longganisa, egg, and vegetables</p>
+        <p class="price">Price: ₱60</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="assets/css/img/etag.jpg" alt="">
+        <h4>Etag</h4>
+        <p class="descitm">Etag is a traditional smoked and salted pork used to flavor various dishes</p>
+        <p class="price">Price: ₱400</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="assets/css/img/kalamay1.jpg" alt="">
+        <h4>Kalamay</h4>
+        <p class="descitm">Kalamay is a sweet, sticky delicacy made from glutinous rice, coconut milk, and suga</p>
+        <p class="price">Price: ₱100</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="assets/css/img/labtang.jpg" alt="">
+        <h4>Labtang</h4>
+        <p class="descitm">Labtang crafts are handmade bamboo products, showcasing local artistry and durability</p>
+        <p class="price">Price: ₱300</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="assets/css/img/sigaycoffee.jpg" alt="">
+        <h4>Sigay Coffee</h4>
+        <p class="descitm">Sigay Coffee is a rich and aromatic brew from highlands, known for its bold flavor</p>
+        <p class="price">Price: ₱180</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="assets/css/img/sinait.jpg" alt="">
+        <h4>Sinait Garlic Products</h4>
+        <p class="descitm">Sinait Garlic Products are famous for their strong aroma and flavor, often used as condiments or seasoning/p>
+        <p class="price">Price: ₱150</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="assets/css/img/tapey.jpg" alt="">
+        <h4>Tapey</h4>
+        <p class="descitm">Tapey is a traditional fermented rice wine with a mildly sweet and tangy taste</p>
+        <p class="price">Price: ₱130</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="assets/css/img/viganlongga.jpg" alt="">
+        <h4>Vigan Logganisa</h4>
+        <p class="descitm">Vigan Longganisa is a garlicky and tangy native sausage, loved for its bold flavor</p>
+        <p class="price">Price: ₱120</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>   
+</section>
+<script src="assets/js/script.js"></script>
+<footer>
+    <h3>Developed by Jerome V. Giray</h3>
+    <p>Follow me on Facebook: <a href="https://www.facebook.com/jerome.v.giray/"><i class="fa-brands fa-facebook"></i></a></p>
+</footer>
+</body>
+</html>

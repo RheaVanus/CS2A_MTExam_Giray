@@ -1,0 +1,192 @@
+* {
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Sets a standard, readable font */
+    background-color: #f2f2f2; /* A light grey background for the page */
+}
+/* Ensures the body and html take up the full viewport height */
+body, html{
+    height: 100%;
+    margin: 0;
+}
+
+/*----------------------------------------------------------------------------------*/
+/* Navigation Bar Section*/
+/*----------------------------------------------------------------------------------*/
+header{
+    position: sticky; /* Makes the header "stick" to the top when the user scrolls */
+    top: 0; /* Specifies the header should stick at the very top of the viewport */
+    z-index: 1000; /* Ensures the header stays on top of other page content */
+}
+/* Flex container for navigation elements */
+.navs {
+    display: flex; /* Enables flexbox for easy horizontal alignment */
+    align-items: center; /* Vertically centers items in the nav bar */
+    background-color: black; /* Sets a black background */
+    padding: 0 20px; /* Adds horizontal padding */
+}
+
+.heads {
+    color: white; /* White text color */
+    margin-right: auto; /* Pushes all other flex items (the nav links) to the right */
+}
+/* Hover effect for a navigation link */
+.navcent:hover{
+    border: 2px solid white;
+}
+.nav-icon {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Lays out the list items in a row */
+}
+/* Styles for the individual navigation links */
+.navs ul li a {
+    display: block; /* Makes the entire padded area clickable */
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 16px; /* Adds clickable space around the link text */
+    text-decoration: none; /* Removes the default underline */
+}
+
+/*----------------------------------------------------------------------------------*/
+/* Hero Image Section Styles */
+/*----------------------------------------------------------------------------------*/
+.heroimg{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/1.jpg");
+    height: 30%; /* Sets the hero section to 30% of the viewport height */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from tiling */
+    background-size: cover; /* Scales the image to cover the entire container */
+}
+.herotxt{
+    text-align: center;
+    position: relative; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    position: relative; /* Ensures the text is above the background image */
+    z-index: 1;
+}
+.herotxt h1{
+    font-size: 40px;
+}
+
+/*---------------------------*/
+/*Contact Us Section */
+/*---------------------------*/
+.conhero{
+    background-color: #333; /* Dark background color */
+    margin-top: 20px; /* Space above the container */
+    padding: 30px; /* Space inside the container */
+    color: white; /* White text */
+}
+
+/*----------------*/
+/* Forms Container Section */
+/*----------------*/
+
+/* This is the main flex container for the two-column layout */
+.divs {
+    display: flex; /* Creates the side-by-side layout for main content and sidebar */
+    align-items: flex-start; /* Aligns columns to the top */
+    padding: 0 20px; /* Adds space on the left and right of the page content */
+    gap: 30px; /* Creates a 30px gap between the main content and the sidebar */
+}
+
+.maincontent {
+    flex: 1; /* Allows the main content to grow and take up all available free space */
+}
+
+/* Styles for a generic content box, used here for the form container */
+.box {
+    width: 100%; /* Makes the box fill the width of its parent (.main-content) */
+    margin: 25px 0 auto;   /* Adds margin to the top and bottom */
+    padding: 20px; 
+    border: 1px solid #ddd; /* A light grey border */
+    background-color: #f9f9f9; /* A very light background to distinguish it from the body */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/*---------------------------*/
+/* Form Styles */
+/*---------------------------*/
+
+.form label {
+    display: block; /* Makes each label take up its own line for a clean, stacked look */
+    margin-bottom: 5px; /* Adds a small space below the label */
+    font-weight: bold;
+    color: #333; /* Dark grey text color */
+}
+
+.form input[type="text"] {
+    width: 100%; /* Makes the input field fill its container */
+    padding: 10px; /* Adds comfortable space inside the input field */
+    margin-bottom: 15px; /* Adds space below each input field */
+    border: 1px solid #ccc; /* A standard grey border */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+.buttons{
+    padding: 15px 30px; /* Generous padding for a large, clickable button */
+    border: none; /* Removes the default border */
+    background-color: black;
+    color: white;
+    cursor: pointer; /* Changes the cursor to a hand icon on hover */
+    border-radius: 10px;
+    font-size: 20px;
+    display: block; /* Makes the button a block-level element */
+}
+
+/* Styles for location section headin */
+.location h1{
+    margin: 30px 10px;
+}
+.loc h3{/*Spacing for location text for proper layout*/
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*---------------*/
+/* Sidebar (Aside) Styles */
+/*---------------*/
+
+.infoasi{
+    margin: 25px 0 20px 0; /* Vertical margin to align with the main content box */
+    width: 300px; /* A fixed width for the sidebar */
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center; /* Centers the content inside the sidebar */
+    border: 1px solid #ddd;
+    flex-shrink: 0; /* Prevents this flex item from shrinking, ensuring it stays 300px wide */
+}
+/* Styles for the image inside the sidebar */
+.infoasi img{
+    width: 50%; /* Image takes up half the width of the sidebar */
+    border-radius: 50%; /* Makes the image perfectly circular */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+/*----------------------------------------------------------------------------------*/
+/* Footer Styles */
+/*----------------------------------------------------------------------------------*/
+footer {
+    padding: 15px; /* Adds space inside the footer */
+    margin-top: 20px; /* Adds space above the footer */
+    text-align: center; /* Centers the footer text */
+    font-weight: bolder;
+}
+/* Style for the main text in the footer */
+footer p{
+    font-size: 30px;
+}
+/* Hover effect for icons (assuming <i> tags are used) in the footer */
+footer i:hover{
+    transform: scale(1.08); /* Makes icons slightly larger on hover */
+}
