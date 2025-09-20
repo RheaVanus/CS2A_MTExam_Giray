@@ -181,7 +181,7 @@ header{/* Styles for the header container */
     border-radius: 50px;
 }
 
-/* Container for the textual information of a feature */
+/* Container for the textual information of a feature images */
 .feature-info {
     max-width: 600px; /* Restricts the maximum width for better readability */
     margin-left: 30px; /* Adds a margin to the left */
